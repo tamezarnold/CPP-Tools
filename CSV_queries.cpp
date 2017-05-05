@@ -84,8 +84,7 @@ int main(){
 main();
 }
 int eval_length(string file_name){
-	//this is so that the number of lines can be found to dictate the size of the array table p[]
-	//can be dynamically allocated
+
 
 		ifstream infile;
 		infile.open( file_name.c_str() );
@@ -103,7 +102,7 @@ int eval_length(string file_name){
 		getline(infile, line);
         size++;
 		}
-	return (size-2);// i need to figure this out before I turn it in
+	return (size-2);
 }
 int populate(string file_name, table p[]){
   //  cout << "populate is running" << endl;
